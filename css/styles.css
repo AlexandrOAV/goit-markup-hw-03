@@ -42,6 +42,19 @@
 .link {
   text-decoration: none;
 }
+/* скидання замовчуваних стилів  */
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+} 
+img {
+  display: block;
+}
+
+/* BODY STYLE  */
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
@@ -49,7 +62,19 @@ color: var(--text-color-site);
 background-color: var(--background-site);
 }
 
+.conteiner {
+  width: 100%;
+  max-width: 1158px;
+  margin:0 auto;
+  padding:0 15px;
+  outline:1px solid red;
+}
+
 /* hedader */
+.header-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .link-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -90,10 +115,14 @@ color: var(--nav-menu-color);
   color: var(--active-address-color);
 }
 
+
 /* hero */
 .hero {
-  background-color:var(--background-color-herofut);
-}
+    background-color:var(--background-color-herofut);
+   padding-top: 188px;
+   padding-bottom: 188px; 
+  }
+
 .hero-caption {
   font-weight: 700;
   font-size: 56px;
@@ -103,12 +132,15 @@ color: var(--nav-menu-color);
   color:var(--text-hero);
 }
 .hero-btn {
-  font-weight: 500;
+   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color:var(--button-color);
   background-color: var(--button-background);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 .hero-btn:hover, 
 .hero-btn:focus {
@@ -116,6 +148,10 @@ color: var(--nav-menu-color);
 }
 
 /* section the best */
+.best {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .best-list-hd {
     font-weight: 500;
     font-size: 20px;
@@ -137,10 +173,17 @@ color: var(--nav-menu-color);
     letter-spacing: 0.02em;
     text-transform: capitalize;  
     color:var(--title-color-hhh);
+    margin-bottom: 72px;
 }
+.job {
+  padding-bottom: 120px;
+}
+
 /* section our team */
 .team {
   background-color: var(--background-section-team);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-item-heading {
   font-weight: 500;
@@ -149,6 +192,8 @@ color: var(--nav-menu-color);
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-color-hhh);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-item-text {
   line-height: 1.5;
@@ -159,12 +204,18 @@ color: var(--nav-menu-color);
  .last {
   background-color: var(--background-color-herofut);
  }
- .last>.link-logo {
+ footer .link-logo {
 color:var(--text-hero);
  }
- .last-text {
+ 
+  .last-text {
   color: var(--text-futer-color);
+  margin-top: 16px;
  }
+.last {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
  /* PAGE PORTFOLIO */
 
