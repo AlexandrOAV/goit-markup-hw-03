@@ -71,10 +71,18 @@ background-color: var(--background-site);
 }
 
 /* hedader */
-.header-page {
+.menu{
+  display: flex;
+}
+.header-nav .link {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.menu .menu-item +.menu-item {
+  margin-left: 40px;
+}
+
 .link-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -99,20 +107,26 @@ color: var(--nav-menu-color);
 .menu-link:focus {
   color:var(--nav-menu-active-color);
 }
-.mail-link, .tel-link {
+/* heder address  */
+.contact-list {
+  display: flex;
+}
+.contact-list .contact-item +.contact-item {
+  margin-left: 40px;
+}
+.contact-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
    font-style: normal;
    line-height: 1.5;
   letter-spacing: 0.02em;  
   color:var(--hover-address-color);
 }
 
-.tel-link:hover,
-.tel-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color:var(--active-address-color);
-}
-.mail-link:hover, 
-.tel-link:focus {
-  color: var(--active-address-color);
 }
 
 
