@@ -22,6 +22,9 @@
 --background-section-team:#F4F4FD;
 
 }
+/* .contact-list .contact-item +.contact-item {
+  margin-left: 40px;
+} */
 /* Скриття заголовків */
  .visually-hidden {
   position: absolute;
@@ -52,6 +55,8 @@ ul {
 } 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* BODY STYLE  */
@@ -70,20 +75,30 @@ background-color: var(--background-site);
   outline:1px solid red;
 }
 
-/* hedader */
+/* -----------------hedader----------------- */
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 .menu{
   display: flex;
-}
+  gap: 40px;
+  
+ }
+.header-conteiner{
+  display: flex;
+  align-items: center;
+  }
 .header-nav .link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.menu .menu-item +.menu-item {
-  margin-left: 40px;
-}
 
 .link-logo {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -108,18 +123,18 @@ color: var(--nav-menu-color);
   color:var(--nav-menu-active-color);
 }
 /* heder address  */
+
 .contact-list {
   display: flex;
-}
-.contact-list .contact-item +.contact-item {
-  margin-left: 40px;
-}
+  gap: 40px;
+  
+  }
 .contact-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-   font-style: normal;
-   line-height: 1.5;
+  font-style: normal;
+  line-height: 1.5;
   letter-spacing: 0.02em;  
   color:var(--hover-address-color);
 }
@@ -129,15 +144,18 @@ color: var(--nav-menu-color);
   color:var(--active-address-color);
 }
 
-
-/* hero */
+/*---------------------- hero------------------------------ */
 .hero {
-    background-color:var(--background-color-herofut);
+   background-color:var(--background-color-herofut);
    padding-top: 188px;
    padding-bottom: 188px; 
+   text-align: center;
   }
 
 .hero-caption {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -146,27 +164,35 @@ color: var(--nav-menu-color);
   color:var(--text-hero);
 }
 .hero-btn {
-   font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  margin-top: 48px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color:var(--button-color);
   background-color: var(--button-background);
   cursor: pointer;
-  border-radius: 4px;
-  padding: 16px 32px;
-  margin-top: 48px;
+
 }
 .hero-btn:hover, 
 .hero-btn:focus {
   background-color: var(--button-hover-background);
 }
 
-/* section the best */
+/* ---------------section the best -------------------*/
 .best {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.best-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 .best-list-hd {
+  margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -174,11 +200,12 @@ color: var(--nav-menu-color);
     color: var(--title-color-hhh);
 }
 .best-item-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  max-width: 264px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
 }
 
-/* Section 3 What are we doing */
+/*------------ Section 3 What are we doing---------------- */
 .job-heading, .team-heading {
     font-weight: 700;
     font-size: 36px;
@@ -192,29 +219,41 @@ color: var(--nav-menu-color);
 .job {
   padding-bottom: 120px;
 }
+.job-list{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 
-/* section our team */
+/* -----------------section our team -----------------------*/
 .team {
   background-color: var(--background-section-team);
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.team-list{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+
+}
 .team-item-heading {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--title-color-hhh);
   margin-top: 32px;
   margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: var(--title-color-hhh);
+  
 }
 .team-item-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
 }
- /* futer */
+ /*----------------- futer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
  }
@@ -225,15 +264,21 @@ color:var(--text-hero);
   .last-text {
   color: var(--text-futer-color);
   margin-top: 16px;
+  max-width: 264px;
  }
 .last {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
- /* PAGE PORTFOLIO */
+ /* |||||||||||||---------PAGE PORTFOLIO------------|||||||||||| */
 
+ .section-portfolio{
+margin-top: 96px;
+margin-bottom: 120px;
+ }
  .radio-filter {
+  border: 1px solid var(--text-futer-color);
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -241,7 +286,7 @@ color:var(--text-hero);
   color: var(--text-button-portfolio);
   background-color:var(--background-radio-button);
   cursor: pointer;
- }
+   }
  .radio-filter:hover, .radio-filter:focus {
   color: var(--text-button-portfolio-active);
   background-color: var(--button-portfolio-activ);
