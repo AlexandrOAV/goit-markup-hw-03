@@ -14,12 +14,14 @@
 --active-address-color:  #404BBF;
 --logo-futer-color:  #F4F4FD;
 --text-futer-color: #E7E9FC;
+--color-border-cart-portfolio:#E7E9FC;
 --text-button-portfolio:#4D5AE5;
 --text-button-portfolio-active: #FFFFFF;
 --background-radio-button:#F4F4FD; 
 --button-portfolio-activ: #404BBF;
 --background-color-herofut: #2E2F42;
 --background-section-team:#F4F4FD;
+
 
 }
 /* .contact-list .contact-item +.contact-item {
@@ -72,7 +74,7 @@ background-color: var(--background-site);
   max-width: 1158px;
   margin:0 auto;
   padding:0 15px;
-  outline:1px solid red;
+  /* outline:1px solid tomato; */
 }
 
 /* -----------------hedader----------------- */
@@ -127,8 +129,10 @@ color: var(--nav-menu-color);
 .contact-list {
   display: flex;
   gap: 40px;
-  
-  }
+}
+/* .contact-list .contact-item +.contact-item {
+  margin-left: 40px;
+} */
 .contact-link {
   display: block;
   padding-top: 24px;
@@ -253,6 +257,10 @@ color: var(--nav-menu-color);
   letter-spacing: 0.02em;
   text-align: center;
 }
+.team-item {
+  width: calc((100%-3*24)/4);
+}
+
  /*----------------- futer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
@@ -277,8 +285,15 @@ color:var(--text-hero);
 margin-top: 96px;
 margin-bottom: 120px;
  }
+ .filter-list{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+ }
  .radio-filter {
-  border: 1px solid var(--text-futer-color);
+  border: 1px solid var(--color-border-cart-portfolio);
+  border-radius: 4px;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -291,13 +306,40 @@ margin-bottom: 120px;
   color: var(--text-button-portfolio-active);
   background-color: var(--button-portfolio-activ);
  }
+ 
+ /* WORK-LIST  */
+ .work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -48px;
+  margin-left: -24px;
+   }
+   .work-list>.work-item{
+    flex-basis: calc(100%/3-24px);
+    margin-left: 24px;
+    margin-top: 48px;
+    }
+  /* .work-item{
+      max-width: 360px;  
+  } */
  .work-item-header {
+   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color-hhh);
+
  }
  .work-item-text {
-  color: var(--text-color-site);
+  
+    color: var(--text-color-site);
   }
+  .work-item-cart{
+    border-left: 1px solid var(--color-border-cart-portfolio);
+    border-right: 1px solid var(--color-border-cart-portfolio);
+    border-bottom: 1px solid var(--color-border-cart-portfolio);
+    padding: 32px 0 32px 16px;
+    /* max-width: 360px; */
+  }
+ 
